@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="mystylesheet.css" />
+    <link rel="icon" href="images/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600;700;900&family=Roboto:wght@100;300;400;700;900&family=Ubuntu:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- https://github.com/andreadg-dev/about-me.git -->
+    <!-- Favorite Font Families -->
+    <!-- font-family: 'Montserrat', sans-serif; -->
+    <!-- font-family: 'Roboto', sans-serif; -->
+    <!-- font-family: 'Ubuntu', sans-serif; -->
+    <!-- font-family: Tahoma, Verdana, sans-serif; -->
+
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff"> -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <!-------------------------------------------------------------->
+    <!--Top Navbar-------------------------------------------------->
+    <!-------------------------------------------------------------->
+    <nav class="navbar navbar-expand-md fixed-top nbs-navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand nbs-navbar-brand" href="#">{adg}</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-------------------------------------------------------------->
+    <!-- Section: Header-------------------------------------------->
+    <!-------------------------------------------------------------->
+    <section class="container-fluid nbs-header">
+      <div class="row nbs-header-content">
+        <div class="row nbs-header-content-name">
+          <div class="col-lg-12 fw-bolder">Andrea Del Giudice</div>
+        </div>
+        <div class="row nbs-header-content-job">
+          <div class="col-md-4">
+            <button
+              type="button"
+              class="btn btn-outline-light btn-lg nbs-header-content-job-btn"
+            >
+              IT Support
+            </button>
+          </div>
+          <div class="col-md-4">
+            <button
+              type="button"
+              class="btn btn-outline-light btn-lg nbs-header-content-job-btn"
+            >
+              Scripting
+            </button>
+          </div>
+          <div class="col-md-4">
+            <button
+              type="button"
+              class="btn btn-outline-light btn-lg nbs-header-content-job-btn"
+            >
+              Web Dev
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-------------------------------------------------------------->
+    <!-- Section: A small introduction ----------------------------->
+    <!-------------------------------------------------------------->
+    <section class="nbs-section nbs-intro">
+      <div class="row">
+        <div class="col-lg-6">
+          <h2 class="fw-bold">A bit about myself</h2>
+          <ul class="lead nbs-intro-content-ul">
+            <li>6 years of experience</li>
+            <li>Basic networking: DHCP, TCP/IT, DNS</li>
+            <li>
+              Technical Support: Microsoft Applications, Windows OS, VPN
+              clients, MDM solutions (Intune, MobileIron), Access Management,
+              Hardware/Software
+            </li>
+            <li>Windows 10 and MS Office applications Technical Support</li>
+            <li>Knowledge Management (4me, BMC Remedy ITSM, ServiceNow)</li>
+            <li>Incident Management (4me, BMC Remedy ITSM, ServiceNow)</li>
+            <li>Asset Management (BMC Remedy ITSM, ServiceNow)</li>
+            <li>MDM Support (Intune, MobileIron)</li>
+            <li>Active Directory, Configuration Manager (SCCM)</li>
+            <li>JAMF Enrollment</li>
+            <li>Remote control apps: TeamViewer, AnyDesk</li>
+            <li>Device erasure: KillDisk, Blanco</li>
+            <li>
+              Digital Signature: Adobe Acrobat DC, Signaturit API
+              (curl/PowerShell)
+            </li>
+            <li>O365 Admin Portal</li>
+            <li>PowerShell Scripting</li>
+            <li>Basic Web Development: CSS, HTML, Bootstrap</li>
+            <li>Polyglot</li>
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <img
+            class="mx-auto d-block nbs-intro-content-pic"
+            src="images/me.jpg"
+            alt="picture of me"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-------------------------------------------------------------->
+    <!-- Section: Education & Certificates ------------------------->
+    <!-------------------------------------------------------------->
+    <section class="nbs-section nbs-educ">
+      <h2 class="fw-bold nbs-educ-title">Education</h2>
+      <div class="row lead">
+        <div class="col-md-4 nbs-educ-content-card">
+          <a
+            href="https://www.axelos.com/certifications/itil-service-management/itil-4-foundation/"
+          >
+            <div class="card nbs-educ-content-card-child">
+              <img
+                class="card-img-top"
+                src="images/itil.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <p class="card-text nbs-educ-content-card-text fw-normal">
+                  ITIL 4 Foundation Certificate
+                </p>
+                <p class="card-text nbs-educ-content-card-text">
+                  IT Service Management
+                </p>
+                <p class="card-text nbs-educ-content-card-text">
+                  AXELOS Global Best Practice
+                </p>
+                <p class="card-text nbs-educ-content-card-text">
+                  Issued on 04/02/2020
+                </p>
+                <p class="card-text nbs-educ-content-card-text">
+                  Amstelveen, Netherlands
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 nbs-educ-content-card">
+          <a href="https://www.gla.ac.uk/">
+            <div class="card nbs-educ-content-card-child">
+              <img
+                class="card-img-top"
+                src="images/msc-diploma.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <p class="card-text nbs-educ-content-card-text fw-normal">
+                  MSc in Chinese Studies
+                </p>
+                <p class="card-text nbs-educ-content-card-text">
+                  University of Glasgow
+                </p>
+                <p class="card-text nbs-educ-content-card-text">
+                  From 2014 • To 2016
+                </p>
+                <p class="card-text nbs-educ-content-card-text">
+                  Galsgow, United Kingdom
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 nbs-educ-content-card">
+          <a href="https://www.unich.it/ugov/degree/2831">
+            <div class="card nbs-educ-content-card-child">
+              <img
+                class="card-img-top"
+                src="images/ba-diploma.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <p class="card-text nbs-educ-content-card-text fw-normal">
+                  BA in Foreign Languages and Literatures
+                </p>
+                <p class="card-text nbs-educ-content-card-text">
+                  Università degli Studi 'G.d'Annunzio'
+                </p>
+                <p class="card-text nbs-educ-content-card-text">
+                  From 2008 • To 2012
+                </p>
+                <p class="card-text nbs-educ-content-card-text">
+                  Pescara, Italy
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-------------------------------------------------------------->
+    <!-- Section: Online Courses ----------------------------------->
+    <!-------------------------------------------------------------->
+
+    <!-------------------------------------------------------------->
+    <!-- Section: Skills ------------------------------------------->
+    <!-------------------------------------------------------------->
+
+    <section class="nbs-section nbs-skills">
+      <h2 class="fw-bold nbs-skills-title">Skills</h2>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card nbs-skills-content-card">
+              <div class="nbs-skills-content-card-box">
+                <div class="nbs-skills-content-card-percent">
+                  <svg>
+                    <circle cx="70" cy="70" r="70"></circle>
+                    <circle cx="70" cy="70" r="70"></circle>
+                  </svg>
+                  <div class="nbs-skills-content-card-num">
+                    <h2>90<span>%</span></h2>
+                  </div>
+                </div>
+                <h2 class="nbs-skills-content-card-text">HTML</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="card nbs-skills-content-card">
+              <div class="nbs-skills-content-card-box">
+                <div class="nbs-skills-content-card-percent">
+                  <svg>
+                    <circle cx="70" cy="70" r="70"></circle>
+                    <circle cx="70" cy="70" r="70"></circle>
+                  </svg>
+                  <div class="nbs-skills-content-card-num">
+                    <h2>90<span>%</span></h2>
+                  </div>
+                </div>
+                <h2 class="nbs-skills-content-card-text">CSS</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="card nbs-skills-content-card">
+              <div class="nbs-skills-content-card-box">
+                <div class="nbs-skills-content-card-percent">
+                  <svg>
+                    <circle cx="70" cy="70" r="70"></circle>
+                    <circle cx="70" cy="70" r="70"></circle>
+                  </svg>
+                  <div class="nbs-skills-content-card-num">
+                    <h2>90<span>%</span></h2>
+                  </div>
+                </div>
+                <h2 class="nbs-skills-content-card-text">Bootstrap</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-------------------------------------------------------------->
+    <!-- Section: Languages ---------------------------------------->
+    <!-------------------------------------------------------------->
+
+    <!-------------------------------------------------------------->
+    <!-- Section: Work Experience ---------------------------------->
+    <!-------------------------------------------------------------->
+
+    <!-------------------------------------------------------------->
+    <!-- Section: Contact me --------------------------------------->
+    <!-------------------------------------------------------------->
+
+    <!-------------------------------------------------------------->
+    <!-- Footer: Copyright and possibly links ---------------------->
+    <!-------------------------------------------------------------->
+  </body>
+</html>
