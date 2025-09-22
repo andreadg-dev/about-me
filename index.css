@@ -7,7 +7,7 @@
 /* font-family: Tahoma, Verdana, sans-serif; */
 
 body{
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Noto Sans', 'Roboto','Ubuntu', sans-serif;
     background-color: black;
     color: white;
     text-align: center;
@@ -18,20 +18,26 @@ body{
     align-items: center;
 }
 
+#business-card{margin-top: 2rem;}
+
 #business-card-logo{
     border-radius: 50%;
     border:5px solid white;
-    height: 22rem;
-    width: 22rem;
+    height: 20rem;
+    width: 20rem;
 }
 
-#business-card-contacts{border-radius: 50%;}
+#business-card-contacts{    
+    border: 1px solid white;
+    border-radius: 1rem;
+}
 
 #portfolio{
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     gap: 2rem;
+    flex-direction: column;
+    margin: 2rem 0 3rem;
 }
 
 #portfolio img{
@@ -42,10 +48,33 @@ body{
     width: 4rem;
 }
 
-.portfolio-item{
+/* .portfolio-item{
     display: flex;
     flex-direction: column;
     align-items: center;
     min-width: 8rem;
     flex: 1 1 4rem;   
+} */
+
+
+.portfolio-item{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border: solid 1px white;
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    color: white;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.portfolio-item-container a{
+    text-decoration: none;
+    color:white;
+}
+
+.portfolio-item:hover{
+    color: black;
+    background-color: white;
 }
