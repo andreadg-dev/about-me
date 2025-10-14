@@ -1,92 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!--Google Fonts-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;300;400;600&family=Roboto:wght@100;300;500;700&family=Rubik:wght@300;400;500;700&family=Ubuntu:wght@300;400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
       rel="stylesheet"
     />
-
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="index.css" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
     <title>deegee-dev</title>
+    <style>
+      body {
+        background-color: #181818;
+        color: white;
+        font-weight: bold;
+        font-family: "Courier New", monospace;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* height: 100vh; */
+        margin: 1rem;
+        min-height: 100vh;
+        min-width: 80vw;
+      }
+
+      #content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #brand {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      #business-card-logo {
+        height: 20rem;
+        width: 20rem;
+        border-radius: 50%;
+        border: solid 4px white;
+      }
+
+      #name {
+        font-family: "Source Sans 3", sans-serif;
+        text-align: center;
+      }
+
+      #console-header {
+        background-color: #2e2e2e;
+        height: 3rem;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #404040;
+      }
+
+      #console-header div {
+        align-items: center;
+        display: flex;
+      }
+
+      #terminal-icons svg {
+        padding: 1rem;
+      }
+
+      #close-icon {
+        background-color: #c42b1c;
+        border-top-right-radius: 10px;
+      }
+
+      .console {
+        font-size: 1.5rem;
+        text-align: left;
+        width: 61rem;
+        max-width: 90vw;
+        word-wrap: break-word;
+        border: 1px solid white;
+        border-radius: 10px;
+      }
+
+      .console #terminal-img {
+        padding: 0.5rem;
+      }
+
+      .console #terminal-name {
+        font-size: 1rem;
+      }
+
+      .console #banner,
+      .console #code {
+        padding: 1rem;
+      }
+
+      .echo {
+        color: #16c60c;
+      }
+
+      .cursor {
+        font-size: 2rem;
+        display: inline-block;
+        font-weight: 100;
+        width: 8px;
+        animation: blink 1.5s infinite;
+      }
+
+      .tilde {
+        color: #3b78ff;
+      }
+
+      @keyframes blink {
+        50% {
+          opacity: 0;
+        }
+      }
+    </style>
   </head>
   <body>
-    <div id="business-card">
-      <img
-        src="images/mylogo.png"
-        alt="deegee-dev logo"
-        id="business-card-logo"
-      />
-      <h1>deegee-dev</h1>
-      <div id="portfolio">
-        <div class="portfolio-item-container">
-          <a
-            href="https://andreadg-dev.github.io/langCards/index.html"
-            target="_blank"
-            ><div class="portfolio-item">
-              <span>myLangCards</span>
-            </div></a
-          >
+    <div id="content">
+      <div class="brand">
+        <img
+          src="images/mylogo.png"
+          alt="deegee-dev logo"
+          id="business-card-logo"
+        />
+        <h1 id="name">@deegeedev.eu</h1>
+      </div>
+      <div class="console" id="console">
+        <div id="console-header">
+          <div>
+            <img
+              src="images/terminal.png"
+              alt="terminal"
+              height="30px"
+              width="30px"
+              id="terminal-img"
+            />
+            <span id="terminal-name">dg prompt</span>
+          </div>
+          <div id="terminal-icons">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-dash-lg"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-square"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"
+              />
+            </svg>
+            <svg
+              id="close-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-x-lg"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+              />
+            </svg>
+          </div>
         </div>
-        <div class="portfolio-item-container">
-          <a href="https://andreadg-dev.github.io/my_workout/" target="_blank"
-            ><div class="portfolio-item">
-              <span>myWorkout</span>
-            </div></a
-          >
+        <div id="banner">
+          <div>DeeGeeDev Europe [Version 10.0.26200.6584] (c) deegeedev</div>
+          <div>Corporation. All rights reserved.</div>
         </div>
-        <div class="portfolio-item-container">
-          <a href="https://andreadg-dev.github.io/public-notes/" target="_blank"
-            ><div class="portfolio-item">
-              <span>myNotes</span>
-            </div></a
-          >
+        <div style="height: 2rem"></div>
+        <div id="code">
+          <span class="cursor">|</span>
         </div>
       </div>
-      <div id="business-card-contacts">
-        <a href="https://github.com/andreadg-dev" target="_blank">
-          <img
-            src="images/github.png"
-            alt="github logo"
-            width="100px"
-            height="100px"
-        /></a>
-        <a
-          href="https://www.linkedin.com/in/andrea-del-giudice-automationdev/"
-          target="_blank"
-        >
-          <img
-            id="linkedinlogo"
-            src="images/linkedin.png"
-            alt="linkedin logo"
-            width="100px"
-            height="100px"
-        /></a>
-      </div>
-      <!--       <div id="portfolio">
-        <div class="portfolio-item">
-          <a
-            href="https://andreadg-dev.github.io/langCards/index.html"
-            target="_blank"
-            ><img src="images/languageapp.png" alt="my language app" /></a
-          ><span>myLangCards</span>
-        </div>
-        <div class="portfolio-item">
-          <a href="https://andreadg-dev.github.io/my_workout/" target="_blank"
-            ><img src="images/sportapp.png" alt="my sport app" /></a
-          ><span>myWorkout</span>
-        </div>
-        <div class="portfolio-item">
-          <a href="https://andreadg-dev.github.io/public-notes/" target="_blank"
-            ><img src="images/devnotesapp.png" alt="my devnotes app app" /></a
-          ><span>myNotes</span>
-        </div>
-      </div> -->
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+      const consoleElement = $("#console");
+      const cursorElement = $(".cursor");
+      const typingSpeed = 50; // ms per character
+      const lineDelay = 600; // delay between lines
+
+      const echoElement = `<span class="echo">andydg@DEEGEE-DEV</span>:
+                           <span class="tilde">(main)</span>
+                           <span class="dollar">$</span>`;
+
+      function wait(ms) {
+        return new Promise((resolve) => setTimeout(resolve, ms));
+      }
+
+      let charIndex = 0;
+
+      async function typeSpanLine(spanLine) {
+        $(echoElement).insertBefore(cursorElement);
+        const newSpanLine = $(`<span class="spanLine"></span>`);
+        newSpanLine.insertBefore(cursorElement);
+
+        for (let i = 0; i < spanLine.length; i++) {
+          newSpanLine.text(newSpanLine.text() + spanLine.charAt(i));
+          await wait(typingSpeed);
+        }
+      }
+
+      async function typeDivLinkLine(link, type) {
+        const newDiv = $("<div></div>");
+        newDiv.insertBefore(cursorElement);
+        const initializing =
+          type === "link" ? " - Initializing " : " - Contact me on ";
+
+        for (let i = 0; i < initializing.length; i++) {
+          newDiv.text(newDiv.text() + initializing.charAt(i));
+          await wait(typingSpeed);
+        }
+
+        const linkStyle = `text-decoration: none;color: #B84EC6;`;
+        const href = type === "link" ? `https://${link}` : `mailto:${link}`;
+        const newLinkElement = $(
+          `<a href=${href} target="_blank" style="${linkStyle}"></a>`
+        );
+        newDiv.append(newLinkElement);
+
+        for (let i = 0; i < link.length; i++) {
+          newLinkElement.text(newLinkElement.text() + link.charAt(i));
+          await wait(typingSpeed);
+        }
+
+        const threeDots = "...";
+        const threeDotsElement = $(`<span></span>`);
+        newDiv.append(threeDotsElement);
+        for (let i = 0; i < threeDots.length; i++) {
+          threeDotsElement.text(threeDotsElement.text() + threeDots.charAt(i));
+          await wait(typingSpeed);
+        }
+      }
+
+      async function typeLines() {
+        await typeSpanLine(` dg init --portfolio`);
+        await wait(lineDelay);
+        await typeDivLinkLine("mylangcards.deegeedev.eu", "link");
+        await wait(lineDelay);
+        await typeDivLinkLine("mynotes.deegeedev.eu", "link");
+        await wait(lineDelay);
+        await typeDivLinkLine("myworkout.deegeedev.eu", "link");
+        await wait(lineDelay);
+        await $(`<div style="height: 1.5rem;"></div>`).insertBefore(
+          cursorElement
+        );
+        await wait(lineDelay);
+        await typeSpanLine(` dg init --info --contact`);
+        await wait(lineDelay);
+        await typeDivLinkLine("github.com/andreadg-dev", "link");
+        await wait(lineDelay);
+        await typeDivLinkLine(
+          "linkedin.com/in/andrea-del-giudice-automationdev/",
+          "link"
+        );
+        await wait(lineDelay);
+        await typeDivLinkLine("andreadg@deegeedev.eu", "mail");
+      }
+
+      window.onload = typeLines();
+    </script>
   </body>
 </html>
