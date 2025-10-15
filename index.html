@@ -284,6 +284,11 @@
         );
         await wait(lineDelay);
         await typeDivLinkLine("andreadg@deegeedev.eu", "mail");
+        await wait(lineDelay);
+        await $(`<div style="height: 1.5rem;"></div>`).insertBefore(
+          cursorElement
+        );
+        await typeSpanLine(" ");
       }
 
       window.onload = typeLines();
